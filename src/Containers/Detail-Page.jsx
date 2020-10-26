@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Character from '../components/Characters/Character';
-import { getCharacters } from '../services/fetch-characters';
+import { getCharacters } from '../Services/fetch-characters';
 
 const DetailPage = ({ match }) => {
     const [loading, setLoading] = useState(true);
