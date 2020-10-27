@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Character from '../components/Characters/Character';
-import { getCharacters } from '../Services/fetch-characters';
+import { getCharacters, getCharacterName } from '../Services/fetch-characters';
 
 const DetailPage = ({ match }) => {
     const [loading, setLoading] = useState(true);
@@ -9,7 +9,7 @@ const DetailPage = ({ match }) => {
     const characterName = match.params.characterName;
 
     useEffect(() => {
-        getCharacters(characterName)
+        getCharacterName(characterName)
           .then(fetchedCharacter => setCharacter(fetchedCharacter[0]))
           .finally(() => setLoading(false));
     }, [characterName]);

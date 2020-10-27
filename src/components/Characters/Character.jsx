@@ -12,11 +12,11 @@ const Character = ({ name, photoUrl, weapon, position, affiliation }) => (
 )
 
 Character.propTypes = {
-    name: PropTypes.string.isRequired,
-    photoUrl: PropTypes.string.isRequired,
-    weapon: PropTypes.string.isRequired,
-    position: PropTypes.string.isRequired,
-    affiliation: PropTypes.string.isRequired
+    name: PropTypes.string,
+    photoUrl: PropTypes.string,
+    weapon: PropTypes.string,
+    position: PropTypes.string,
+    affiliation: PropTypes.string
 }
 
 export default Character;

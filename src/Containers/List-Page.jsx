@@ -11,9 +11,8 @@ const CharacterList = () => {
             .then(characters => setCharacters(characters))
             .finally(() => setLoading(false));
     }, []);
-
     if(loading) return <h1>Loading...</h1>;
-
+    
     return (
         <Characters characters={characters} />
     );
