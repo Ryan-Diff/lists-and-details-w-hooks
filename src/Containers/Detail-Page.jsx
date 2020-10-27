@@ -7,7 +7,7 @@ const DetailPage = ({ match }) => {
     const [character, setCharacter] = useState('');
 
     const characterName = match.params.characterName;
-
+    
     useEffect(() => {
         getCharacterName(characterName)
           .then(fetchedCharacter => setCharacter(fetchedCharacter[0]))
