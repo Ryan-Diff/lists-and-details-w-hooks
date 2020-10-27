@@ -8,5 +8,5 @@ export const getCharacters = () => {
   export const getCharacterName = (characterName) => {
     return fetch(`https://last-airbender-api.herokuapp.com/api/v1/characters?name=${characterName}`)
     .then(res => res.json())
-    .then(json => console.log(json))
+    // .then(json => console.log(json))
 };
