@@ -5,7 +5,7 @@ import {
   Switch,
 } from 'react-router-dom';
 import ListPage from '../../Containers/List-Page';
-import DetailPage from '../../containers/Detail-Page';
+import DetailPage from '../../Containers/Detail-Page';
 
 export default function App() {
   return (
